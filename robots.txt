@@ -1,0 +1,52 @@
+# Robots.txt для ФинансПро Украина
+# domain.com
+
+User-agent: *
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /cgi-bin/
+
+# Разрешить все основные страницы
+Allow: /
+Allow: /mission.html
+Allow: /services.html
+Allow: /achievements.html
+Allow: /about.html
+Allow: /news.html
+Allow: /cases.html
+Allow: /contacts.html
+Allow: /form-handler.html
+Allow: /thank-you.html
+Allow: /privacy.html
+Allow: /cookie-policy.html
+Allow: /terms.html
+Allow: /disclaimer.html
+
+# Разрешить CSS, JS и изображения
+Allow: /style.css
+Allow: /script.js
+Allow: /img/
+
+# Основные поисковые системы
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /temp/
+Allow: /
+
+User-agent: Bingbot
+Disallow: /admin/
+Disallow: /temp/
+Allow: /
+
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /temp/
+Allow: /
+
+# Ссылка на sitemap
+Sitemap: https://domain.com/sitemap.xml
+
+# Время задержки между запросами (в секундах)
+Crawl-delay: 1 
