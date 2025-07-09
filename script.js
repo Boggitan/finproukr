@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	initCookieBanner();
 	initHeaderScroll();
 	initMobileMenu(); // Добавлена инициализация мобильного меню
+	updateFooterYear(); // Добавлено обновление года в футере
 });
 
 // Анимации при скролле
@@ -119,6 +120,14 @@ function initMobileMenu() {
 			if (hamburger) hamburger.classList.remove('active');
 		});
 	});
+}
+
+// Обновление года в футере
+function updateFooterYear() {
+	const footerYear = document.querySelector('.footer-year');
+	if (footerYear) {
+		footerYear.textContent = new Date().getFullYear();
+	}
 }
 
 // Cookie баннер функциональность
